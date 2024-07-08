@@ -1,0 +1,9 @@
+[Unit]
+Description = Chime
+
+[Service]
+Type = simple
+ExecStart = /usr/bin/notify-send --icon=time 'Timer Interrupt' 'Check yourself!'
+
+[Install]
+WantedBy=multi-user.target
