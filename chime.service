@@ -6,4 +6,4 @@ Type = simple
 ExecStart = /usr/bin/notify-send --icon=time --urgency=critical --expire-time=5000 'Timer Interrupt' 'Check yourself!'
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
