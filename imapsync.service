@@ -3,7 +3,7 @@ Description = imapsync
 
 [Service]
 Type = simple
-ExecStart = /usr/bin/imapsync --user1 yuta.taniguchi.y.t@gmail.com --passfile1 /home/yuta/.imapsync-gmail --host2 localhost --user2 yuta --passfile2 /home/yuta/.imapsync-local --gmail1 --delete2 --delete2folders --exclude '\\[Gmail\\]/Chats$'
+ExecStart = /usr/bin/imapsync --user1 yuta.taniguchi.y.t@gmail.com --passfile1 %h/.imapsync-gmail --host2 localhost --user2 yuta --passfile2 %h/.imapsync-local --gmail1 --delete2 --delete2folders --exclude '\\[Gmail\\]/Chats$'
 
 [Install]
 WantedBy=multi-user.target

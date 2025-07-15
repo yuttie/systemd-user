@@ -1,0 +1,9 @@
+[Unit]
+Description = find-user-dirs
+
+[Service]
+Type = simple
+ExecStart = %h/.config/hypr/find-user-dirs.sh
+
+[Install]
+WantedBy=multi-user.target
