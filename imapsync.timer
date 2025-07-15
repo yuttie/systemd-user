@@ -1,0 +1,8 @@
+[Unit]
+Description = imapsync
+
+[Timer]
+OnCalendar = 00/3:00
+
+[Install]
+WantedBy = timers.target
