@@ -2,7 +2,8 @@
 Description = find-user-dirs
 
 [Timer]
-OnCalendar = *-*-* *:00/15:00
+OnStartupSec=1sec
+OnUnitActiveSec=10min
 
 [Install]
 WantedBy = timers.target
