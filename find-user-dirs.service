@@ -4,6 +4,7 @@ Description = find-user-dirs
 [Service]
 Type = simple
 ExecStart = %h/.config/hypr/find-user-dirs.sh
+StandardOutput = null
 
 [Install]
 WantedBy=default.target
